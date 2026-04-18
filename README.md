@@ -1,4 +1,4 @@
-COMPLETE AUTOMATION SETUP GuardDuty → EventBridge → Lambda → SNS → Email Alert
+GuardDuty → EventBridge → Lambda → SNS → Email Alert
 
   -------------------------------------------------------
   STEP 1: IAM role for this setup
