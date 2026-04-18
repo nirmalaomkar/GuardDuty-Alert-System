@@ -214,3 +214,30 @@ EventBridge Rule
  SNS Topic 
     ↓
  Email Alert
+ -----------------------------------------------------------------------------------------------------------
+What exactly you’re billed for
+1. VPC Flow Logs analysis
+Tracks network traffic in your VPC
+Pricing depends on GB of logs analyzed
+
+
+2. DNS Logs analysis
+Monitors DNS queries for suspicious domains
+Charged per million DNS queries
+
+3. CloudTrail Events analysis
+Looks at API activity (like IAM, EC2 actions)
+Charged per million events analyzed
+
+4. EKS Audit Logs (if enabled)
+Monitors Kubernetes API activity
+Charged per million audit log events
+
+5. Malware Protection (EBS scanning)
+Scans EBS volumes for malware
+Charged per GB scanned
+
+6. Runtime Monitoring (EKS / EC2)
+Detects threats during runtime
+Charged per vCPU per hour
+
