@@ -33,11 +33,15 @@ Add SNS - write inline policy to same IAM role
   -------------------------------------------------------
   STEP 2: ENABLE GUARDDUTY
   -------------------------------------------------------
-  1. Log in to AWS Console. 2. Search for GuardDuty. 3.
-  Click “Get Started”. 4. Click “Enable GuardDuty”.
+  1. Log in to AWS Console.
+  2. Search for GuardDuty .
+  3. Click “Get Started”.
+  4. Click “Enable GuardDuty”.
 
-  GuardDuty will begin monitoring: - CloudTrail logs -
-  VPC Flow Logs - DNS Logs
+  GuardDuty will begin monitoring: - 
+  CloudTrail logs 
+  VPC Flow Logs 
+  DNS Logs
   -------------------------------------------------------
 
  STEP 3: CREATE SNS TOPIC
@@ -46,7 +50,9 @@ Add SNS - write inline policy to same IAM role
 2.  Search for SNS (Simple Notification Service).
 3.  Click “Create Topic”.
 
-Configuration: Type: Standard Name: guardduty-alert-topic
+Configuration:
+Type: Standard 
+Name: guardduty-alert-topic
 
 Click “Create Topic”.
 
@@ -57,8 +63,8 @@ Click “Create Topic”.
   2. Click “Create Subscription”.
 
   Configuration: 
-  Protocol: Email Endpoint:
-  your-email@example.com
+  Protocol: Email 
+  Endpoint: your-email@example.com
 
   3. Click Create Subscription. 
   4. Check your email and  confirm the subscription.
@@ -85,7 +91,7 @@ STEP 6: ADD ENVIRONMENT VARIABLE
 2.  Go to Configuration → Environment Variables.
 3.  Add:
 
-Key: SNS_TOPIC_ARN Value:
+Key: SNS_TOPIC_ARN Value:ARN_COPIED_FROM_SNS_TOPIC
 
   -------------------------------------------------------
   STEP 7: ADD LAMBDA CODE
